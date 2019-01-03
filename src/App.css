@@ -2,14 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,4 +24,101 @@
   to {
     transform: rotate(360deg);
   }
+}
+.questionBox {
+  width: 90%;
+  margin: 2em auto;
+  text-align: center;
+  background-color: lightgrey;
+  border: 5px solid grey;
+  padding: 25px;
+}
+@keyframes click-wave {
+  0% {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    opacity: 0.35;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    margin-top: -80px;
+    margin-left: -80px;
+    opacity: 0;
+  }
+}
+.questionBox .option-input {
+  position: relative;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: all 0.15s ease-out 0s;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background: #d7cbcb;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.questionBox .option-input:hover {
+  background: #d6a9a9;
+}
+.questionBox .option-input:checked {
+  background: #da3c41;
+}
+.questionBox .option-input:checked::before {
+  font-size: 20px;
+  line-height: 30px;
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: "✔";
+  text-align: center;
+}
+.questionBox .option-input:checked::after {
+  position: relative;
+  display: block;
+  content: "";
+  -webkit-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #da3c41;
+}
+.questionBox .option-input.radio {
+  border-radius: 50%;
+}
+.questionBox .option-input.radio::after {
+  border-radius: 50%;
+}
+.questionBox label {
+  line-height: 40px;
+  display: block;
+}
+.questionBox .option-input:disabled {
+  cursor: not-allowed;
+  background: #b8b7b7;
+}
+.questionBox .option-input:disabled::before {
+  font-size: 20px;
+  line-height: 30px;
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: "✖︎";
+  text-align: center;
+}
+.questionBox .disabled {
+  color: #9e9e9e;
+}
+
+.none {
+  display: none;
 }
