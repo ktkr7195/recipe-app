@@ -1,30 +1,47 @@
-import React, { Component } from "react";
+import React from "react";
 
 function QuestionBox(props) {
   return (
-    <div class="questionBox" className={props.none}>
-      <label>Q, {props.question}</label>
-      <label>
-        <input type="radio" class="option-input radio" name="cpipr02" checked />
-        {props.option1}
-      </label>
-      <label>
-        <input type="radio" class="option-input radio" name="cpipr02" />
-        {props.option2}
-      </label>
-      <label>
-        <input type="radio" class="option-input radio" name="cpipr02" />
-        {props.option3}
-      </label>
-      <label class="disabled">
-        <input
-          type="radio"
-          class="option-input radio"
-          name="cpipr02"
-          disabled
-        />
-        {props.option4}
-      </label>
+    <div className={props.display}>
+      <div className="questionBox">
+        <label>Q, {props.question}</label>
+        <label>
+          <input
+            type="radio"
+            className="option-input radio"
+            name={props.id1}
+            onClick={props.handleClick}
+          />
+          {props.option1}
+        </label>
+        <label>
+          <input
+            type="radio"
+            className="option-input radio"
+            name={props.id2}
+            onClick={props.handleClick}
+          />
+          {props.option2}
+        </label>
+        <label>
+          <input
+            type="radio"
+            className="option-input radio"
+            name={props.id3}
+            onClick={props.handleClick}
+          />
+          {props.option3}
+        </label>
+        <label className="disabled">
+          <input
+            type="radio"
+            className="option-input radio"
+            name={props.id4}
+            onClick={props.handleClick}
+          />
+          {props.option4}
+        </label>
+      </div>
     </div>
   );
 }
