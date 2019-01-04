@@ -119,6 +119,9 @@
   color: #9e9e9e;
 }
 
-.none {
+.displayNone {
   display: none;
+}
+.Q2 {
+  display: block;
 }
