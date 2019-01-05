@@ -1,13 +1,13 @@
 import React from "react";
 import QuestionBox from "./QuestionBox";
 
-function Form3(props) {
+function Question4(props) {
   return (
     <div>
       <QuestionBox
-        handleClick={props.handleClick}
-        id="#2"
-        question="option2 is clicked"
+        handleClick1={props.handleClick}
+        id="#1"
+        question="option4 is clicked"
         option1="a"
         option2="b"
         option3="c"
@@ -17,4 +17,4 @@ function Form3(props) {
   );
 }
 
-export default Form3;
+export default Question4;
