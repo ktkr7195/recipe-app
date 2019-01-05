@@ -1,6 +1,6 @@
 import React from "react";
 
-function QuestionBox(props) {
+function UrlGetForm(props) {
   return (
     <div className={props.display}>
       <div className="questionBox">
@@ -9,9 +9,8 @@ function QuestionBox(props) {
           <input
             type="radio"
             className="option-input radio"
-            id={props.urlId1}
-            name={props.id1}
-            onClick={props.handleClick}
+            name={props.urlId1}
+            onClick={props.getUrl}
           />
           {props.option1}
         </label>
@@ -19,9 +18,8 @@ function QuestionBox(props) {
           <input
             type="radio"
             className="option-input radio"
-            id={props.urlId2}
-            name={props.id2}
-            onClick={props.handleClick}
+            name={props.urlId2}
+            onClick={props.getUrl}
           />
           {props.option2}
         </label>
@@ -29,9 +27,8 @@ function QuestionBox(props) {
           <input
             type="radio"
             className="option-input radio"
-            id={props.urlId3}
-            name={props.id3}
-            onClick={props.handleClick}
+            name={props.urlId3}
+            onClick={props.getUrl}
           />
           {props.option3}
         </label>
@@ -39,9 +36,8 @@ function QuestionBox(props) {
           <input
             type="radio"
             className="option-input radio"
-            id={props.urlId1}
-            name={props.id4}
-            onClick={props.handleClick}
+            name={props.urlId4}
+            onClick={props.getUrl}
           />
           {props.option4}
         </label>
@@ -50,4 +46,4 @@ function QuestionBox(props) {
   );
 }
 
-export default QuestionBox;
+export default UrlGetForm;
