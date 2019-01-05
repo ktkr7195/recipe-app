@@ -5,13 +5,17 @@ function Question4(props) {
   return (
     <div>
       <QuestionBox
-        handleClick1={props.handleClick}
-        id="#1"
-        question="option4 is clicked"
-        option1="a"
-        option2="b"
-        option3="c"
-        option4="d"
+        handleClick={props.handleClick}
+        getUrl={props.getUrl}
+        id1="Q17"
+        id2="Q18"
+        id3="Q19"
+        id4="Q20"
+        question="なんでもいいんだね"
+        option1="液体と野菜"
+        option2="果物"
+        option3="金ない"
+        option4="その他"
       />
     </div>
   );

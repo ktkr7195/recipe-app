@@ -1,20 +1,17 @@
 import React from "react";
-import QuestionBox from "./QuestionBox";
+import UrlGetForm from "./UrlGetForm";
 
 function Q1of2(props) {
   return (
     <div>
-      <QuestionBox
+      <UrlGetForm
         handleClick={props.handleClick}
-        id1="Q5"
-        id2="Q6"
-        id3="Q7"
-        id4="Q8"
-        question="q1-2？"
-        option1="肉"
-        option2="魚"
-        option3="麺類"
-        option4="その他"
+        getUrl={props.getUrl}
+        urlId1="32"
+        urlId2="11"
+        question="やっぱり定番の魚料理？"
+        option1="定番の魚料理"
+        option2="その他魚料理"
       />
     </div>
   );
