@@ -7,15 +7,11 @@ function Q1of4(props) {
       <UrlGetForm
         handleClick={props.handleClick}
         getUrl={props.getUrl}
-        urlId1="33"
-        urlId2="14"
-        urlId3="23"
-        urlId4="35"
-        question="豆腐って体にいいよ"
-        option1="卵料理"
-        option2="ご飯物"
-        option3="鍋料理"
-        option4="大豆、豆腐"
+        urlId1="22"
+        urlId2="21"
+        question="むずいけどいい？"
+        option1="パン"
+        option2="お菓子"
       />
     </div>
   );

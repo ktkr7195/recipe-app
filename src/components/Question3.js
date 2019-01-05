@@ -6,15 +6,16 @@ function Question3(props) {
     <div>
       <QuestionBox
         handleClick={props.handleClick}
-        id1="Q1"
-        id2="Q2"
-        id3="Q3"
-        id4="Q4"
-        question="今日の気分は？"
-        option1="めんどくせぇし腹減った"
-        option2="料理がんばりたいなり"
-        option3="パーティーYeah!"
-        option4="なんだろう、よくわかんない"
+        getUrl={props.getUrl}
+        id1="Q13"
+        id2="Q14"
+        id3="Q15"
+        id4="Q16"
+        question="今の季節は？"
+        option1="春"
+        option2="夏"
+        option3="秋"
+        option4="冬"
       />
     </div>
   );
