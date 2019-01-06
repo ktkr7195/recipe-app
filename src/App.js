@@ -40,7 +40,7 @@ class App extends Component {
         "https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20170426?format=json&applicationId=1080103655190289289"
       )
       .then(res => {
-        console.log(res.data.result.large);
+        console.log(res.data.result.small);
         this.setState({ recipeData: res.data.result.medium });
       });
   }
