@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import LandingPage from "./components/LandingPage";
 import BaseQuestion from "./components/BaseQuestion";
 import Question1 from "./components/Question1";
-import Question２ from "./components/Question2";
+import Question2 from "./components/Question2";
 import Question3 from "./components/Question3";
 import Question4 from "./components/Question4";
 import Q1of1 from "./components/Q1of1";
@@ -28,7 +29,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      display: "",
+      display: "landingPage",
       recipeData: "",
       largeId: ""
     };
@@ -40,7 +41,6 @@ class App extends Component {
         "https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20170426?format=json&applicationId=1080103655190289289"
       )
       .then(res => {
-        console.log(res.data.result.small);
         this.setState({ recipeData: res.data.result.medium });
       });
   }
@@ -57,10 +57,12 @@ class App extends Component {
 
   render() {
     let display;
-    if (this.state.display === "Q1") {
+    if (this.state.display === "landingPage") {
+      display = <LandingPage handleClick={this.handleClick} />;
+    } else if (this.state.display === "Q1") {
       display = <Question1 handleClick={this.handleClick} />;
     } else if (this.state.display === "Q2") {
-      display = <Question２ handleClick={this.handleClick} />;
+      display = <Question2 handleClick={this.handleClick} />;
     } else if (this.state.display === "Q3") {
       display = <Question3 handleClick={this.handleClick} />;
     } else if (this.state.display === "Q4") {
