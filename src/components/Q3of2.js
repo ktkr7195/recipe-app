@@ -8,7 +8,7 @@ function Q2of2(props) {
         handleClick={props.handleClick}
         getUrl={props.getUrl}
         urlId1="53"
-        question="夏のだぜえ！"
+        question="夏だぁ！"
         option1="夏の料理"
       />
     </div>

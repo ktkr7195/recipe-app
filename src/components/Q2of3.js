@@ -9,9 +9,9 @@ function Q2of3(props) {
         getUrl={props.getUrl}
         urlId1="47"
         urlId2="48"
-        question="日本の料理は最高ですな"
-        option1="沖縄料理"
-        option2="日本各地の郷土料理"
+        question="日本でどこが好き？"
+        option1="沖縄"
+        option2="その他の日本"
       />
     </div>
   );

@@ -11,11 +11,11 @@ function Question1(props) {
         id2="Q6"
         id3="Q7"
         id4="Q8"
-        question="何をたべたい？"
-        option1="肉"
-        option2="魚"
-        option3="麺類"
-        option4="その他"
+        question="好きなキャラクターは誰？"
+        option1="キン肉マン"
+        option2="ロビンマスク"
+        option3="ラーメンマン"
+        option4="その他のキャラクター"
       />
     </div>
   );

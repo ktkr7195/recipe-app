@@ -11,11 +11,11 @@ function Q2of2(props) {
         urlId2="44"
         urlId3="25"
         urlId4="46"
-        question="お洒落なの作ってね"
-        option1="イタリア料理"
-        option2="フランス料理"
-        option3="西洋料理"
-        option4="エスニック料理、中南米"
+        question="どこに行きたい？"
+        option1="イタリア"
+        option2="フランス"
+        option3="西洋のどこか"
+        option4="スペイン、中南米"
       />
     </div>
   );

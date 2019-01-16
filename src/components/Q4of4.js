@@ -11,7 +11,7 @@ function Q2of2(props) {
         urlId2="39"
         urlId3="13"
         urlId4="26"
-        question="ほんとなんでもいいんだね"
+        question="どれがいい？"
         option1="ソース、調味料、ドレッシング"
         option2="健康料理"
         option3="その他の食材"
