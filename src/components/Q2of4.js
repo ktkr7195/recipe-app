@@ -9,7 +9,7 @@ function Q1of4(props) {
         getUrl={props.getUrl}
         urlId1="22"
         urlId2="21"
-        question="むずいけどいい？"
+        question="どっちにする？"
         option1="パン"
         option2="お菓子"
       />

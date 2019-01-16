@@ -11,7 +11,7 @@ function Q1of4(props) {
         urlId2="14"
         urlId3="23"
         urlId4="35"
-        question="豆腐って体にいいよ"
+        question="何が食べたい？"
         option1="卵料理"
         option2="ご飯物"
         option3="鍋料理"

@@ -128,7 +128,15 @@ class App extends Component {
           <h1>今日のレシピ</h1>
         </header>
 
-        {listDatas ? <ul>{listDatas}</ul> : display}
+        {listDatas ? (
+          <ul className="questionBox">
+            {" "}
+            <h2>こんなのが食べたかった？</h2>
+            {listDatas}
+          </ul>
+        ) : (
+          display
+        )}
       </div>
     );
   }

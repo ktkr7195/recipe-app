@@ -10,8 +10,8 @@ function Q2of2(props) {
         urlId1="50"
         urlId2="49"
         urlId3="55"
-        question="冬は太るよね"
-        option1="クリスマス"
+        question="どれがいい？"
+        option1="クリスマス料理"
         option2="おせち料理"
         option3="その他冬の料理"
       />

@@ -125,3 +125,6 @@
 .Q2 {
   display: block;
 }
+ul {
+  list-style: none;
+}
