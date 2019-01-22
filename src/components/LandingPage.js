@@ -10,7 +10,7 @@ function QuestionBox(props) {
           </p>
         </label>
         <button onClick={props.handleClick} name="baseQuestion">
-          Let's get stated
+          スタート
         </button>
       </div>
     </div>
